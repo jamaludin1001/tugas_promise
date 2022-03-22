@@ -27,6 +27,6 @@ var searchButton = document.querySelector(".search-button");
                         </div>`;
                     contentNews.innerHTML += card1;
             })
-        });
+        })
       }
 search();
