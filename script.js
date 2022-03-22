@@ -13,8 +13,8 @@ var searchButton = document.querySelector(".search-button");
     
               let card1 = " ";
               data.articles.forEach((d)=>{
-                  card1=`<div class="col-6 col-md-4 mb-4"> 
-                            <div class="card" >
+                  card1=`<div class="col-sm-6 col-md-4 mb-4" > 
+                            <div class="card card border-secondary mb-3 style="max-width: 18rem;"">
                                 <img src="${d.urlToImage}" class="card-img-top" alt="">
                                   <div class="card-body" id="data">
                                         <h5 class="card-title">${d.title}</h5>
@@ -26,7 +26,7 @@ var searchButton = document.querySelector(".search-button");
                               </div>
                         </div>`;
                     contentNews.innerHTML += card1;
-            });
+            })
           });
           }
 search();
